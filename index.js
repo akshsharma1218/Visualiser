@@ -1,7 +1,9 @@
-const aksh_menu_element = document.querySelector(".aksh-menu");
+const ak = document.getElementsByClassName("aksh-menu");
 
 const div = document.querySelector(".ak_container");
 
-aksh_menu_element.addEventListener("click", function() {
-    div.classList.toggle("shekhar");
-})
+for (i=0;i<ak.length;i++){
+    ak[i].addEventListener("click", function() {
+      div.classList.toggle("shekhar");
+    });
+};
